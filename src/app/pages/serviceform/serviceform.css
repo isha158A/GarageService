@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background: linear-gradient(to right, #631cae, #2575fc);*/
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+form{
+    width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    background:linear-gradient(to right, #631cae, #2575fc)    ;
+    height: auto;
+    border: 1px solid #b44343;
+    
+}
+
+h2{
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 33px;
+    margin-bottom: 20px;
+    height: 40px;
+    background: linear-gradient(to right, #631cae, #2575fc);
+}
+h4{
+    color:black;
+    margin: 10px 10px 0px 10px !important;
+    align-items: center;
+    font-weight: 800;
+}
+form .form-group{
+    margin-bottom: 20px;
+}
+form .form-group input[type="text"]{
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:black;
+    font-size: 16px;
+    background-color:linear-gradient(to right, #141314, #999da6);
+
+}
+input[type="radio"]{
+    margin-top: 10px;
+    margin-right: 10px;
+}   
+input[type="checkbox"]{
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #dedcdc;
+}
+form .form-group label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #218838;
+}
+.seasonal-service{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.seasonal-service label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+.span{
+    color: black;
+
+}
+.parts-used{
+    margin-top: 20px;
+}
+.input-group-addon{
+    margin-left: 5px;
+    color: black;
+    background-color: black;
+}

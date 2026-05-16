@@ -1,0 +1,47 @@
+<h2>Vehicle Service Form</h2>
+
+<form class="service-form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <input type="text" class="form-control" id="customername" placeholder="Enter customer name" required>
+        <span class="input-group-addon"><i class="fa fa-user"></i></span><br>
+        <input type="text" class="form-control" id="vehiclenumber" placeholder="Enter vehicle number">
+        <span class="input-group-addon"><i class="fa fa-car"></i></span><br>
+        <input type="text" class="form-control" id="contactnumber" placeholder="Enter contact number" required><br>
+        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+         <h4>Services Selected</h4> 
+        <input type="checkbox" class="form-check-input" placeholder="Services selected" id="Service Selected" name="Services Selected" value="Oil Change" (change)="onServiceSelect('Oil Change')">
+        <label type="checkbox" class="form-check-label" for="Service Selected">Oil Change</label>
+        <input type="checkbox" class="form-check-input" id="Service Selected" name="Services Selected" value="Tire Replacement" (change)="onServiceSelect('Tire Replacement')">
+        <label type="checkbox"  class="form-check-label" for="Service Selected">Tyre Replacement</label>
+        <input type="checkbox" class="form-check-input" id="Service Selected" name="Services Selected" value="Battery Check" (change)="onServiceSelect('Battery Check')">
+        <label type="checkbox" class="form-check-label" for="Service Selected">Battery Check</label>
+        <input type="checkbox" class="form-check-input" id="Service Selected" name="Services Selected" value="Engine Service" (change)="onServiceSelect('Engine Service')"> 
+        <label type="checkbox"  class="form-check-label" for="Service Selected">Engine Service</label>
+        <input type="checkbox" class="form-check-input" id="Service Selected" name="Services Selected" value="Wash" (change)="onServiceSelect('Wash')"> 
+        <label  type="checkbox" class="form-check-label" for="Service Selected">Wash</label>
+<br>
+ <h4>Parts Used</h4> 
+<input type="checkbox" id="partsused" name="Parts Used" class="form-check-input" >
+        <label type="checkbox" class="form-check-label" for="Service Selected">Oil Filter</label>
+        <input type="checkbox" id="partsused" name="Parts Used" class="form-check-input" >
+        <label type="checkbox"  class="form-check-label" for="Service Selected">Air Filter</label>
+        <input type="checkbox" id="partsused" name="Parts Used" class="form-check-input" >
+        <label type="checkbox" class="form-check-label" for="Service Selected">Brake Pads</label>
+        <input type="checkbox" id="partsused" name="Parts Used" class="form-check-input"  >
+        <label type="checkbox" class="form-check-label" for="Service Selected">Spark Plugs</label>
+        <br>
+        <h4>Service Type</h4>         
+    <input  type="radio" class="service type" id="serviceType" name="serviceType" value="Regular Service">
+    <label for="serviceType">Normal Service</label>
+    <input type="radio" class="service type" id="serviceType" name="serviceType" value="Major Service">
+    <label for="serviceType">Urgent Service</label> 
+     <h4>Seasonal Offer Code</h4>  
+    <input type="seasonaloffercode" class="form-control" id="seasonaloffercode" placeholder="Enter seasonal offer code">
+    <br>  
+     <h4>Additional Notes</h4>  
+    <input type="text" class="form-control" id="additionalnotes" placeholder="Enter additional notes">
+    </div>
+    <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+    <label class="form-check-label" for="terms">I agree to the terms and conditions</label><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
